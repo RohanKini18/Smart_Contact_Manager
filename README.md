@@ -3,10 +3,9 @@ SCM using Spring Boot
 ```5th Sem JAVA SPRING FRAMEWORK Mini-Project```
 ***
 Spring Security
-Step 1: implementing the UserDetails --> here we configure the Authorities of User
-Step 2: implementing the UserDetailsService ---> Check whether the User is present in DB or not
-					then we simply pass the User to the implemented Class of UserDetail
-Step 3:  Security Configuration Class with all Configuration --> A Simple Class that extends WebSecurityConfigurerAdapter
+1) implementing the UserDetails --> here we configure the Authorities of User
+2) implementing the UserDetailsService ---> Check whether the User is present in DB or not then we simply pass the User to the implemented Class of UserDetail
+3) Security Configuration Class with all Configuration --> A Simple Class that extends WebSecurityConfigurerAdapter
 
 ***
 Database: Sqlite
