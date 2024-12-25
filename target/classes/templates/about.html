@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns:th="http://www.thymeleaf.org"
+  th:replace="Base::layout(~{::section})"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title text="${title}">About SMC</title>
+    <link rel="icon" th:href="@{'/img/contact.png'}" />
+  </head>
+  <body>
+    <br />
+    <section>
+      <br />
+    
+      <div class="container">
+        <header class="header">
+            <h1>Benefits of Using a Smart Contact Manager</h1>
+        </header>
+        
+        <section class="benefits">
+            <div class="benefit-card">
+                <h2>Efficiency</h2>
+                <p>Automates tasks, reduces manual data entry, and helps you stay on top of your relationships.</p>
+            </div>
+            <div class="benefit-card">
+                <h2>Better Follow-up</h2>
+                <p>Ensures timely follow-ups with contacts, improving your relationships and increasing your chances of success in business or personal engagements.</p>
+            </div>
+            <div class="benefit-card">
+                <h2>Data-Driven Decisions</h2>
+                <p>Provides actionable insights into your communication patterns and contact history.</p>
+            </div>
+            <div class="benefit-card">
+                <h2>Collaboration</h2>
+                <p>Allows team collaboration, which is particularly useful for sales and customer service teams to work together on managing relationships.</p>
+            </div>
+            <div class="benefit-card">
+                <h2>Scalability</h2>
+                <p>As your network grows, these tools can scale with you and help manage larger, more complex sets of contacts.</p>
+            </div>
+            <div class="benefit-card">
+              <h2>Improved Organization</h2>
+              <p>Keeps contacts, communication history, and other important details organized in one place, making it easier to access and manage information.</p>
+          </div>
+        </section>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fc;
+            color: #333;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            color: #3b8bfa;
+            margin: 0;
+        }
+        
+        /* Benefits Section */
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            margin-top: 30px;
+        }
+        
+        /* Benefit Card */
+        .benefit-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .benefit-card h2 {
+            color: #3b8bfa;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .benefit-card p {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .benefit-card {
+                padding: 15px;
+            }
+        
+            header h1 {
+                font-size: 2em;
+            }
+        }
+        
+        </style>
+    </section>
+  </body>
+</html>
